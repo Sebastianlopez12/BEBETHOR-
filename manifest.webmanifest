@@ -1,0 +1,11 @@
+{
+  "name": "BEBETHOR - Asistente personal",
+  "short_name": "BEBETHOR",
+  "description": "Tu asistente personal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0f1b",
+  "theme_color": "#101321",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

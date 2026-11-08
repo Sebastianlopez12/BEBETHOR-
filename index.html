@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101321">
+  <meta name="description" content="BEBETHOR, tu asistente personal.">
+  <title>BEBETHOR — Asistente personal</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <div><div class="brand-name">BEBETHOR</div><div class="brand-sub">ASISTENTE PERSONAL</div></div>
+      </div>
+      <button id="installBtn" class="install-btn" hidden>Instalar</button>
+    </header>
+
+    <main>
+      <section class="welcome" id="welcome">
+        <div class="orb"><span>B</span></div>
+        <p class="eyebrow">TU ESPACIO INTELIGENTE</p>
+        <h1>Hola. Soy <span>BEBETHOR.</span></h1>
+        <p class="intro">Tu asistente personal está listo para ayudarte a organizar ideas, resolver dudas y planificar tus próximos pasos.</p>
+      </section>
+
+      <section class="quick-actions" aria-label="Accesos rápidos">
+        <button class="quick-card" data-prompt="Ayúdame a organizar mis tareas de hoy."><span>✦</span><b>Organizar mi día</b><small>Ordena tus prioridades</small></button>
+        <button class="quick-card" data-prompt="Ayúdame a desarrollar una idea paso a paso."><span>⌘</span><b>Desarrollar una idea</b><small>De la idea a la acción</small></button>
+        <button class="quick-card" data-prompt="Explícame un tema de forma sencilla y con ejemplos."><span>◎</span><b>Aprender algo</b><small>Explicaciones claras</small></button>
+      </section>
+
+      <section class="chat-panel">
+        <div class="chat-heading"><div><h2>Conversación</h2><p id="status">Modo inicial · guardado en este dispositivo</p></div><button id="clearBtn" class="clear-btn" title="Borrar conversación">↺</button></div>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="message assistant"><div class="avatar">B</div><div class="bubble">Estoy aquí. ¿Qué te gustaría hacer?</div></div>
+        </div>
+        <form id="chatForm" class="composer">
+          <textarea id="prompt" rows="1" placeholder="Escribe tu mensaje..." aria-label="Escribe tu mensaje"></textarea>
+          <button type="submit" aria-label="Enviar mensaje" class="send-btn">➤</button>
+        </form>
+        <p class="disclaimer">Versión inicial: las conversaciones se guardan localmente. La conexión con un modelo de IA real se incorpora en la siguiente etapa.</p>
+      </section>
+    </main>
+    <footer> BEBETHOR <span>•</span> VERSIÓN 0.1.0 </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
